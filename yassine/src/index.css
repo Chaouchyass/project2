@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px  */
+}
+
+header {
+  background-color: #bc6b6b;
+  margin: 3rem 5rem;
+  border-radius: 2rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.logo h3 {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+.logo img {
+  width: 7rem;
+}
+.links ul {
+  display: flex;
+  gap: 5rem;
+}
+.links ul li {
+  font-size: 1.8rem;
+}
+.dropdown .menu {
+  color: black;
+  font-weight: 100;
+}
+
+.links ul li .link {
+  color: black;
+  position: relative;
+}
+.dropdown .menu {
+  font-size: 1.54rem;
+}
+.dropdown {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 2.5rem;
+  background-color: white;
+  height: auto;
+  z-index: 9999;
+  width: 15rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: none;
+}
+.links ul li .link:hover > .dropdown {
+  display: block;
+}
+.active {
+  font-weight: bold;
+}
+.main_section {
+  margin: 3rem 5rem;
+}
+
+.flex_box {
+  display: flex;
+  align-items: center;
+  margin: 7rem 0;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.flex_box .left h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+.flex_box .left p {
+  font-size: 1.6rem;
+  color: black;
+  margin-top: 4rem;
+  text-align: justify;
+  width: 70rem;
+}
+
+.right .image img {
+  width: 45rem;
+}
+
+.fields {
+  background-color: #bc6b6b;
+  height: auto;
+  padding: 3rem 2rem;
+}
+.fields h1 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 100;
+}
+.card {
+  width: 35rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.card .img img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.card h2 {
+  font-size: 2.5rem;
+  color: #ffff;
+  font-weight: 300;
+}
+.fields_flex {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.btn_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem 0;
+  gap: 15rem;
+}
+
+.btn_flex button {
+  width: auto;
+  padding: 1.4rem 6rem;
+  border: 1px solid #bc6b6b;
+  background-color: #bc6b6b;
+  border-radius: 1rem;
+  outline: none;
+  color: #ffff;
+  font-size: 1.8rem;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.language li {
+  width: 10rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #bc6b6b;
+  border-radius: 2rem;
+  text-align: center;
+}
+.language .lan {
+  color: #fff;
+  font-weight: 200;
+}
+
+/* coaches component css start  */
+
+.main_section .main {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 4rem;
+}
+
+.coaches_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.coachCard {
+  width: 30rem;
+  height: auto;
+  background-color: #bc6b6b;
+}
+.coachCard img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.coachData h2 {
+  color: white;
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.coachData {
+  background-color: #bc6b6b;
+  padding: 1rem;
+}
+.coachData p {
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #ffff;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+table th {
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+table td {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+table .padding {
+  background-color: #bc6b6b;
+  color: #ffff;
+}
+
+/* service componet css start  */
+
+.service {
+  width: 100%;
+  height: auto;
+  background-color: #bc6b6b;
+  border-radius: 2rem;
+}
+
+.service h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+.service hr {
+  border: 0.2px solid black;
+}
+
+.service_flex {
+  margin-top: 4rem;
+  color: #ffff;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.service_flex .left h3 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+.service_flex .left .h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+.service_flex .left li {
+  font-size: 1.8rem;
+  list-style: disc;
+}
+.service_flex .right .imgg {
+  width: 42rem;
+}
+
+.service_flex .left button {
+  width: auto;
+  padding: 0.8rem 4rem;
+  font-size: 1.8rem;
+  margin-top: 12rem;
+  outline: none;
+  border-radius: 1rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.service_flex .left .join {
+  margin-top: 6rem;
+}
+
+.main_section .heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.inputs .left label {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+.inputs .left input {
+  width: 40rem;
+  padding: 1.5rem;
+  background-color: #bc6b6b;
+  border: 1px solid #bc6b6b;
+  outline: none;
+  color: #ffff;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+}
+.inputs .left input::placeholder {
+  color: #ffff;
+}
+
+form {
+  margin-top: 5rem;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: 4rem;
+}
+
+form button {
+  padding: 0.7rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  outline: none;
+  display: flex;
+  margin: 8rem auto;
+  width: 15rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.book_flex {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.book_card {
+  width: 35rem;
+  height: 35rem;
+}
+.book_card img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+.book_card button {
+  width: 16rem;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  font-size: 1.6rem;
+  background-color: #bc6b6b;
+  color: #ffff;
+  outline: none;
+  border: 1px solid #bc6b6b;
+  border-radius: 1rem;
+}
+.snd-form {
+  margin: 13rem 0;
+}
+.BOOK {
+  margin-top: 3rem;
+}
+.BOOK label {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+.BOOK select,
+input {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #bc6b6b;
+  border: 1px solid #bc6b6b;
+  outline: none;
+  color: #ffff;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+}
+
+.BOOK input::placeholder {
+  color: #ffff;
+}
+
+.form_flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.form_flex .BOOK {
+  width: 100%;
+}
+.btn button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #bc6b6b;
+  border: none;
+  outline: none;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.btn .link {
+  color: #fff;
+  font-weight: 200;
+}
+.btn .space {
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 4rem;
+}
+
+/* contact component css start  */
+
+.content_flex {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+.content_flex .left button {
+  width: 16rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #bc6b6b;
+  color: #ffff;
+  outline: none;
+  border: 1px solid #bc6b6b;
+  border-radius: 1rem;
+}
+.content_flex .left .button {
+  display: flex;
+  gap: 2rem;
+}
+
+.content_flex .left .map {
+  margin-top: 5rem;
+  width: 40rem;
+  height: 30rem;
+}
+
+.content_flex .left .map img {
+  width: 100%;
+  object-fit: cover;
+  height: 30rem;
+}
+
+.content_flex .right .line {
+  width: 0.4rem;
+  height: 41.4rem;
+  background-color: black;
+}
+.content_flex .right {
+  height: auto;
+}
+.right-flex {
+  display: flex;
+  gap: 2rem;
+}
+.tble_flex .data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table h1 {
+  font-weight: 100;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.tble_flex .data h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.accordian_area {
+  margin: 8rem 0;
+}
+
+.accordians {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #bc6b6b;
+  padding: 1rem 1.5rem;
+}
+.answer p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: justify;
+}
+.answer {
+  height: 0rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.answer.show {
+  height: 5rem;
+  margin-top: 1rem;
+}
+
+.answer.show {
+  height: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: -21px;
+}
+.accor_flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bc6b6b;
+  cursor: pointer;
+}
+
+.accordians h3 {
+  font-size: 1.8rem;
+  color: #ffff;
+  font-weight: 100;
+}
+
+.accordians span {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.error {
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 6rem;
+}
